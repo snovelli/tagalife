@@ -2,4 +2,13 @@
 
     <style name="AppTheme" parent="android:Theme.Black.NoTitleBar" />
     
+    <style name="menuText" parent="@android:style/TextAppearance" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/menu_dim</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    
+        
 </resources>
