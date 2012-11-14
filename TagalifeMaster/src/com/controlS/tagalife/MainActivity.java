@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
+// Classe page accueil de l'application TAL
+
 public class MainActivity extends Activity {
 
     @Override
