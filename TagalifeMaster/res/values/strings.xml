@@ -19,5 +19,9 @@
     <string name="marche_suivre">Marche à suivre</string>
     <string name="appels">Appel d\'urgence</string>
     <string name="dons">Dons</string>
+    
+    <!-- nom de la page d'accueil -->
+    <string name="title_begin">Tag a </string>
+    <string name="title_end">Life</string>
 
 </resources>
