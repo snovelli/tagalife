@@ -30,7 +30,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="15dp"
         android:text="@string/title_begin"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="@style/appTitleBegin" />
 
     <TextView
         android:id="@+id/textView2"
@@ -40,6 +40,6 @@
         android:layout_alignBottom="@+id/textView1"
         android:layout_toRightOf="@+id/textView1"
         android:text="@string/title_end"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="@style/appTitleEnd" />
 
 </RelativeLayout>

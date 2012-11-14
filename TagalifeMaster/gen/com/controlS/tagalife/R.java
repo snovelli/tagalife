@@ -16,7 +16,8 @@ public final class R {
     }
     public static final class dimen {
         public static final int menu_dim=0x7f050000;
-        public static final int title_dim=0x7f050001;
+        public static final int title_dim_begin=0x7f050001;
+        public static final int title_dim_end=0x7f050002;
     }
     public static final class drawable {
         public static final int background_hdpi=0x7f020000;
@@ -65,7 +66,8 @@ public final class R {
     }
     public static final class style {
         public static final int AppTheme=0x7f070000;
-        public static final int appTitle=0x7f070002;
+        public static final int appTitleBegin=0x7f070003;
+        public static final int appTitleEnd=0x7f070002;
         public static final int menuText=0x7f070001;
     }
 }

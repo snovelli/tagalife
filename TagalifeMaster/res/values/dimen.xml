@@ -1,6 +1,7 @@
 <resources>
     
     <dimen name="menu_dim">48dp</dimen>
-    <dimen name="title_dim">72dp</dimen>
+    <dimen name="title_dim_begin">36dp</dimen>
+    <dimen name="title_dim_end">36dp</dimen>
     
 </resources>
