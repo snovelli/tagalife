@@ -1,8 +1,12 @@
 <resources>
 
-    <string name="app_name">Tagalife</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Tag a Life</string>
+    <string name="app_title">Tag a Life</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Tag a Life</string>
+    <string name="localiser">Localiser</string>
+    <string name="marche_suivre">Marche à suivre</string>
+    <string name="appels">Appel d\'urgence</string>
+    <string name="dons">Dons</string>
 
 </resources>
