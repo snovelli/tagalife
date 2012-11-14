@@ -1,0 +1,6 @@
+<resources>
+    
+    <dimen name="menu_dim">48dp</dimen>
+    <dimen name="title_dim">72dp</dimen>
+    
+</resources>
