@@ -22,10 +22,15 @@ public final class R {
         public static final int background_hdpi=0x7f020000;
         public static final int ic_action_search=0x7f020001;
         public static final int ic_launcher=0x7f020002;
+        public static final int separator420=0x7f020003;
     }
     public static final class id {
-        public static final int menu_apropos=0x7f090001;
-        public static final int menu_options=0x7f090000;
+        public static final int imageView1=0x7f090001;
+        public static final int menu_apropos=0x7f090005;
+        public static final int menu_options=0x7f090004;
+        public static final int textView1=0x7f090002;
+        public static final int textView2=0x7f090003;
+        public static final int textView3=0x7f090000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -53,6 +58,10 @@ public final class R {
         /**  page de l'application 
          */
         public static final int title_activity_main=0x7f060002;
+        /**  nom de la page d'accueil 
+         */
+        public static final int title_begin=0x7f060009;
+        public static final int title_end=0x7f06000a;
     }
     public static final class style {
         public static final int AppTheme=0x7f070000;
