@@ -35,12 +35,15 @@ public final class R {
         public static final int linearLayout1=0x7f090000;
         public static final int menu_apropos=0x7f090005;
         public static final int menu_options=0x7f090004;
+        public static final int menu_settings=0x7f090006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int activity_marche_as=0x7f030001;
     }
     public static final class menu {
         public static final int activity_main=0x7f080000;
+        public static final int activity_marche_as=0x7f080001;
     }
     public static final class string {
         /**  nom de l'application 
@@ -51,6 +54,7 @@ public final class R {
         public static final int app_title=0x7f060001;
         public static final int appels=0x7f060007;
         public static final int dons=0x7f060008;
+        public static final int hello_world=0x7f060009;
         /**  nom des boutons 
          */
         public static final int localiser=0x7f060005;
@@ -59,9 +63,11 @@ public final class R {
         /**  nom des menus 
          */
         public static final int menu_options=0x7f060003;
+        public static final int menu_settings=0x7f06000a;
         /**  page de l'application 
          */
         public static final int title_activity_main=0x7f060002;
+        public static final int title_activity_marche_as=0x7f06000b;
     }
     public static final class style {
         public static final int AppTheme=0x7f070000;
