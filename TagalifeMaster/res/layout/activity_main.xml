@@ -5,6 +5,7 @@
     android:background="@drawable/background_hdpi" >
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -14,12 +15,33 @@
         android:orientation="vertical" >
 
         <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="69dp"
-            android:layout_height="85dp"
-            android:src="@drawable/telephone_icon_device"
-            android:background="@color/bgcolor" />
+            android:id="@+id/imageButtonLocalisation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/localisation_icon_device" 
+            android:background="@color/bgcolor"/>
+            
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_marginRight="71dp"
+        android:src="@drawable/wordpad_icon_device"
+        android:background="@color/bgcolor" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="133dp"
+        android:src="@drawable/telephone_icon_device"
+        android:background="@color/bgcolor" />
 
 </RelativeLayout>
