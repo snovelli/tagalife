@@ -13,12 +13,19 @@ import android.widget.ImageButton;
 public class MainActivity extends Activity implements OnClickListener {
 	
 	ImageButton marcheAS = null;
+	ImageButton location = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        location = (ImageButton)findViewById(R.id.imageButtonLocation);
+        location.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_location));
+        location.setOnClickListener(this);
+        
         marcheAS = (ImageButton)findViewById(R.id.imageButtonNote);
+        marcheAS.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_note));
         marcheAS.setOnClickListener(this);
     }
 

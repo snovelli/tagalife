@@ -4,44 +4,35 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_hdpi" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
+    <ImageButton
+        android:id="@+id/imageButtonLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="116dp"
-        android:orientation="vertical" >
-
-        <ImageButton
-            android:id="@+id/imageButtonLocalisation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/localisation_icon_device" 
-            android:background="@color/bgcolor"/>
-            
-
-    </LinearLayout>
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/bgcolor"
+        android:src="@drawable/location_icon_device" />
 
     <ImageButton
         android:id="@+id/imageButtonNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/linearLayout1"
-        android:layout_marginRight="71dp"
-        android:src="@drawable/wordpad_icon_device"
-        android:background="@color/bgcolor" />
+        android:layout_alignTop="@+id/imageButtonLocation"
+        android:layout_toRightOf="@+id/imageButtonLocation"
+        android:background="@color/bgcolor"
+        android:src="@drawable/wordpad_icon_device" />
 
     <ImageButton
         android:id="@+id/imageButtonPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="133dp"
-        android:src="@drawable/telephone_icon_device"
+        android:layout_alignLeft="@+id/imageButtonLocation"
+        android:layout_below="@+id/imageButtonLocation"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/telephone_icon_device" 
         android:background="@color/bgcolor" />
 
 </RelativeLayout>
