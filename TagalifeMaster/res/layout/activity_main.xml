@@ -32,8 +32,8 @@
         android:layout_alignLeft="@+id/imageButtonLocation"
         android:layout_below="@+id/imageButtonLocation"
         android:layout_marginTop="60dp"
-        android:src="@drawable/telephone_icon_device" 
-        android:background="@color/bgcolor" />
+        android:background="@color/bgcolor"
+        android:src="@drawable/telephone_icon_device" />
 
     <ImageButton
         android:id="@+id/imageButtonDon"

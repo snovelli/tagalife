@@ -30,9 +30,10 @@ public final class R {
         public static final int ic_launcher=0x7f020006;
         public static final int location_icon_clicked=0x7f020007;
         public static final int location_icon_device=0x7f020008;
-        public static final int telephone_icon_device=0x7f020009;
-        public static final int wordpad_icon_clicked=0x7f02000a;
-        public static final int wordpad_icon_device=0x7f02000b;
+        public static final int telephone_icon_clicked=0x7f020009;
+        public static final int telephone_icon_device=0x7f02000a;
+        public static final int wordpad_icon_clicked=0x7f02000b;
+        public static final int wordpad_icon_device=0x7f02000c;
     }
     public static final class id {
         public static final int imageButtonDon=0x7f090007;
