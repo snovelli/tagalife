@@ -14,6 +14,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	
 	ImageButton marcheAS = null;
 	ImageButton location = null;
+	ImageButton appel = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,10 @@ public class MainActivity extends Activity implements OnClickListener {
         marcheAS = (ImageButton)findViewById(R.id.imageButtonNote);
         marcheAS.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_note));
         marcheAS.setOnClickListener(this);
+        
+        appel = (ImageButton)findViewById(R.id.imageButtonPhone);
+        appel.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_appel));
+        appel.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +44,9 @@ public class MainActivity extends Activity implements OnClickListener {
     	if(v == marcheAS) {
     		Intent intentMarcheAS = new Intent(this,MarcheASActivity.class);
     		startActivity(intentMarcheAS);
+    	}else if(v == appel){
+    		Intent intentAppel = new Intent(this,AppelActivity.class);
+    		startActivity(intentAppel);
     	}
     }
 }
