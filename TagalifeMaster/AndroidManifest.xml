@@ -25,6 +25,14 @@
             android:name="com.controlS.tagalife.MarcheASActivity"
             android:label="@string/title_activity_marche_as" >
         </activity>
+        <activity
+            android:name="com.controlS.tagalife.AppelActivity"
+            android:label="@string/title_activity_appel" >
+        </activity>
+        <activity
+            android:name="com.controlS.tagalife.DonActivity"
+            android:label="@string/title_activity_don" >
+        </activity>
     </application>
 
 </manifest>

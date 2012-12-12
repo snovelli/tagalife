@@ -9,6 +9,9 @@
 
     <!-- page de l'application -->
     <string name="title_activity_main">Tag a Life</string>
+    <string name="title_activity_marche_as">MarcheASActivity</string>
+    <string name="title_activity_appel">AppelActivity</string>
+    <string name="title_activity_don">DonActivity</string>
 
     <!-- nom des menus -->
     <string name="menu_options">Options</string>
@@ -21,8 +24,6 @@
     <string name="dons">Dons</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_marche_as">MarcheASActivity</string>
-    <string name="title_activity_appel">AppelActivity</string>
-    <string name="title_activity_don">DonActivity</string>
+    
 
 </resources>
