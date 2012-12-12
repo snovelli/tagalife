@@ -46,18 +46,23 @@ public class MainActivity extends Activity implements OnClickListener {
     }
     
     public void onClick(View v) {
-    	if(v == marcheAS) {
-    		Intent intentMarcheAS = new Intent(this,MarcheASActivity.class);
-    		startActivity(intentMarcheAS);
-    	}else if(v == appel){
-    		Intent intentAppel = new Intent(this,AppelActivity.class);
-    		startActivity(intentAppel);
-    	}else if(v == location){
+    	switch (v.getId()) {
+    	case R.id.imageButtonLocation:
     		Intent intentLocation = new Intent(this,LocationActivity.class);
     		startActivity(intentLocation);
-    	}else if(v == don){
+    		break;
+    	case R.id.imageButtonNote:
+    		Intent intentMarcheAS = new Intent(this,MarcheASActivity.class);
+    		startActivity(intentMarcheAS);
+    		break;
+    	case R.id.imageButtonPhone:
+    		Intent intentAppel = new Intent(this,AppelActivity.class);
+    		startActivity(intentAppel);
+    		break;
+    	case R.id.imageButtonDon:
     		Intent intentDon = new Intent(this,DonActivity.class);
     		startActivity(intentDon);
+    		break;
     	}
     }
 }
