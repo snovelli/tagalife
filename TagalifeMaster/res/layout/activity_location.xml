@@ -16,19 +16,19 @@
         
         <RadioButton 
             android:id="@+id/radioStateLow"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:checked="false" />
         
         <RadioButton 
             android:id="@+id/radioStateMedium"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:checked="false" />
         
         <RadioButton 
             android:id="@+id/radioStateHigh"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:checked="false" />
         

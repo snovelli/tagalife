@@ -31,11 +31,11 @@ public class MainActivity extends Activity implements OnClickListener {
         marcheAS.setOnClickListener(this);
         
         appel = (ImageButton)findViewById(R.id.imageButtonPhone);
-        appel.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_appel));
+//        appel.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_appel));
         appel.setOnClickListener(this);
         
         don = (ImageButton)findViewById(R.id.imageButtonDon);
-        don.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_don));
+//        don.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_don));
         don.setOnClickListener(this);
     }
 

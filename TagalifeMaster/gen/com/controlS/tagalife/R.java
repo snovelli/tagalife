@@ -68,24 +68,25 @@ public final class R {
         /**  titre de l'application 
          */
         public static final int app_title=0x7f060001;
-        public static final int appels=0x7f060007;
-        public static final int dons=0x7f060008;
-        public static final int hello_world=0x7f060009;
+        public static final int appels=0x7f06000b;
+        public static final int dons=0x7f06000c;
+        public static final int hello_world=0x7f06000d;
         /**  nom des boutons 
          */
-        public static final int localiser=0x7f060005;
-        public static final int marche_suivre=0x7f060006;
-        public static final int menu_apropos=0x7f060004;
+        public static final int localiser=0x7f060009;
+        public static final int marche_suivre=0x7f06000a;
+        public static final int menu_apropos=0x7f060008;
         /**  nom des menus 
          */
-        public static final int menu_options=0x7f060003;
-        public static final int menu_settings=0x7f06000a;
-        public static final int title_activity_appel=0x7f06000c;
-        public static final int title_activity_don=0x7f06000d;
+        public static final int menu_options=0x7f060007;
+        public static final int menu_settings=0x7f06000e;
+        public static final int title_activity_appel=0x7f060005;
+        public static final int title_activity_don=0x7f060006;
+        public static final int title_activity_location=0x7f060003;
         /**  page de l'application 
          */
         public static final int title_activity_main=0x7f060002;
-        public static final int title_activity_marche_as=0x7f06000b;
+        public static final int title_activity_marche_as=0x7f060004;
     }
     public static final class style {
         public static final int AppTheme=0x7f070000;

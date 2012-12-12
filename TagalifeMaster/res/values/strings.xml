@@ -9,6 +9,7 @@
 
     <!-- page de l'application -->
     <string name="title_activity_main">Tag a Life</string>
+    <string name="title_activity_location">LocationActivity</string>
     <string name="title_activity_marche_as">MarcheASActivity</string>
     <string name="title_activity_appel">AppelActivity</string>
     <string name="title_activity_don">DonActivity</string>
