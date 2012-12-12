@@ -34,9 +34,9 @@ public class MainActivity extends Activity implements OnClickListener {
         appel.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_appel));
         appel.setOnClickListener(this);
         
-        /*appel = (ImageButton)findViewById(R.id.imageButtonDon);
-        appel.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_appel));
-        appel.setOnClickListener(this);*/
+        don = (ImageButton)findViewById(R.id.imageButtonDon);
+        don.setBackgroundDrawable(getResources().getDrawable(R.drawable.effect_don));
+        don.setOnClickListener(this);
     }
 
     @Override
@@ -53,8 +53,11 @@ public class MainActivity extends Activity implements OnClickListener {
     		Intent intentAppel = new Intent(this,AppelActivity.class);
     		startActivity(intentAppel);
     	}else if(v == location){
-    		Intent intentAppel = new Intent(this,LocationActivity.class);
-    		startActivity(intentAppel);
+    		Intent intentLocation = new Intent(this,LocationActivity.class);
+    		startActivity(intentLocation);
+    	}else if(v == don){
+    		Intent intentDon = new Intent(this,DonActivity.class);
+    		startActivity(intentDon);
     	}
     }
 }

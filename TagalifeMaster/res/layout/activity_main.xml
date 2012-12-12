@@ -35,4 +35,14 @@
         android:src="@drawable/telephone_icon_device" 
         android:background="@color/bgcolor" />
 
+    <ImageButton
+        android:id="@+id/imageButtonDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonNote"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageButtonNote"
+        android:layout_alignTop="@+id/imageButtonPhone"
+        android:src="@android:drawable/sym_action_email" />
+
 </RelativeLayout>
