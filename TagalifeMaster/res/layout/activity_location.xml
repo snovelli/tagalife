@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hdpi"
+    tools:context=".TagActivity" >
+    
+    <RadioGroup
+        android:id="@+id/radioState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" >
+        
+        <RadioButton 
+            android:id="@+id/radioStateLow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:checked="false" />
+        
+        <RadioButton 
+            android:id="@+id/radioStateMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:checked="false" />
+        
+        <RadioButton 
+            android:id="@+id/radioStateHigh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:checked="false" />
+        
+    </RadioGroup>
+
+</RelativeLayout>
