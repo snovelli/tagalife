@@ -28,25 +28,44 @@ public final class R {
         public static final int effect_note=0x7f020004;
         public static final int ic_action_search=0x7f020005;
         public static final int ic_launcher=0x7f020006;
-        public static final int location_icon_clicked=0x7f020007;
-        public static final int location_icon_device=0x7f020008;
-        public static final int telephone_icon_clicked=0x7f020009;
-        public static final int telephone_icon_device=0x7f02000a;
-        public static final int wordpad_icon_clicked=0x7f02000b;
-        public static final int wordpad_icon_device=0x7f02000c;
+        public static final int localisation_icon_ok=0x7f020007;
+        public static final int location_icon_clicked=0x7f020008;
+        public static final int location_icon_device=0x7f020009;
+        public static final int telephone_icon_clicked=0x7f02000a;
+        public static final int telephone_icon_device=0x7f02000b;
+        public static final int wordpad_icon_clicked=0x7f02000c;
+        public static final int wordpad_icon_device=0x7f02000d;
     }
     public static final class id {
-        public static final int imageButtonDon=0x7f090007;
-        public static final int imageButtonLocation=0x7f090004;
-        public static final int imageButtonNote=0x7f090005;
-        public static final int imageButtonPhone=0x7f090006;
-        public static final int menu_apropos=0x7f09000a;
-        public static final int menu_options=0x7f090009;
-        public static final int menu_settings=0x7f090008;
-        public static final int radioState=0x7f090000;
-        public static final int radioStateHigh=0x7f090003;
-        public static final int radioStateLow=0x7f090001;
-        public static final int radioStateMedium=0x7f090002;
+        public static final int TextView01=0x7f090014;
+        public static final int TextView02=0x7f090016;
+        public static final int TextView03=0x7f090018;
+        public static final int altitude=0x7f090019;
+        public static final int imageButtonDon=0x7f090013;
+        public static final int imageButtonLocation=0x7f090010;
+        public static final int imageButtonNote=0x7f090011;
+        public static final int imageButtonPhone=0x7f090012;
+        public static final int imageButtonValider=0x7f09000f;
+        public static final int latitude=0x7f090015;
+        public static final int longitude=0x7f090017;
+        public static final int menu_apropos=0x7f09001c;
+        public static final int menu_options=0x7f09001b;
+        public static final int menu_settings=0x7f09001a;
+        public static final int radioEtatBon=0x7f09000b;
+        public static final int radioEtatMauvais=0x7f09000a;
+        public static final int radioEtatTresMauvais=0x7f090009;
+        public static final int radioFemme=0x7f090004;
+        public static final int radioGroupEtat=0x7f090008;
+        public static final int radioGroupSexe=0x7f090000;
+        public static final int radioHomme=0x7f090002;
+        public static final int seekBarAge=0x7f090006;
+        public static final int textViewAge=0x7f090003;
+        public static final int textViewEtat=0x7f090007;
+        public static final int textViewEtatBon=0x7f09000c;
+        public static final int textViewFemme=0x7f090005;
+        public static final int textViewHomme=0x7f090001;
+        public static final int textViewMauvais=0x7f09000d;
+        public static final int textViewTresMauvais=0x7f09000e;
     }
     public static final class layout {
         public static final int activity_appel=0x7f030000;
@@ -54,13 +73,15 @@ public final class R {
         public static final int activity_location=0x7f030002;
         public static final int activity_main=0x7f030003;
         public static final int activity_marche_as=0x7f030004;
+        public static final int activity_result=0x7f030005;
     }
     public static final class menu {
         public static final int activity_appel=0x7f080000;
         public static final int activity_don=0x7f080001;
         public static final int activity_main=0x7f080002;
         public static final int activity_marche_as=0x7f080003;
-        public static final int activity_tag=0x7f080004;
+        public static final int activity_result=0x7f080004;
+        public static final int activity_tag=0x7f080005;
     }
     public static final class string {
         /**  nom de l'application 
@@ -88,6 +109,7 @@ public final class R {
          */
         public static final int title_activity_main=0x7f060002;
         public static final int title_activity_marche_as=0x7f060004;
+        public static final int title_activity_result=0x7f06000f;
     }
     public static final class style {
         public static final int AppTheme=0x7f070000;
