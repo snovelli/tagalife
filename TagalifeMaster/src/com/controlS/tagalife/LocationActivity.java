@@ -2,6 +2,13 @@ package com.controlS.tagalife;
 
 
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
@@ -49,6 +56,24 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 			getProvider();
     		break;
 		}
+	}
+	
+	private void createXMLDocument() throws ParserConfigurationException {
+		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+		
+		Document document = documentBuilder.newDocument();
+		
+		Element rootElement = document.createElement("Tag");
+		Element sexeElement = document.createElement("sexe");
+//		sexeElement.setAttribute("sexe", R.id.textViewEtat);
+		Element ageElement 	= document.createElement("age");
+		Element etatElement = document.createElement("etat");
+		
+		rootElement.appendChild(sexeElement).appendChild(ageElement).appendChild(etatElement);
+		
+		
+		
 	}
 	
 	protected String getProvider() {

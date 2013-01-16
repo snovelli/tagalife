@@ -39,10 +39,10 @@
         android:id="@+id/imageButtonDon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButtonNote"
-        android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/imageButtonNote"
-        android:layout_alignTop="@+id/imageButtonPhone"
-        android:src="@android:drawable/sym_action_email" />
+        android:layout_below="@+id/imageButtonNote"
+        android:layout_marginTop="60dp"
+        android:background="@color/bgcolor"
+        android:src="@drawable/donate_icon_device" />
 
 </RelativeLayout>
