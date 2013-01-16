@@ -32,6 +32,7 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 		findViewById(R.id.imageButtonValider).setOnClickListener(this);
 		
 		lManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+		getProvider();
 		
 	}
 
@@ -63,7 +64,7 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 			startActivity(intentMain);
 		} else {
 //			bestProvider = lManager.getBestProvider(criteria, false);
-			lManager.requestLocationUpdates(bestProvider, 60000, 0, this);
+			lManager.requestLocationUpdates(bestProvider, 5000, 0, this);
 			Intent intentResult = new Intent(this,ResultActivity.class);
     		startActivity(intentResult);
 		}
