@@ -56,8 +56,18 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 		Criteria criteria = new Criteria();
 		criteria.setAccuracy(Criteria.ACCURACY_FINE);
 		String bestProvider = lManager.getBestProvider(criteria, true);
+				
+		if (bestProvider == null) {
+			Log.i("Localisation message", "Aucun gestionnaire gps trouvé, veuillez activer la localisation");
+			Intent intentMain = new Intent(this, MainActivity.class);
+			startActivity(intentMain);
+		} else {
+//			bestProvider = lManager.getBestProvider(criteria, false);
+			lManager.requestLocationUpdates(bestProvider, 60000, 0, this);
+			Intent intentResult = new Intent(this,ResultActivity.class);
+    		startActivity(intentResult);
+		}
 		return bestProvider;
-		
 	}
 
 	public void onLocationChanged(Location location) {
