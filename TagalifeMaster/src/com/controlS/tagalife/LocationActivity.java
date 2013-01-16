@@ -1,6 +1,7 @@
 package com.controlS.tagalife;
 
 
+
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
@@ -52,22 +53,11 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 	protected String getProvider() {
 		setProgressBarIndeterminateVisibility(true);
 		
-//		Criteria criteria = new Criteria();
-//		criteria.setAccuracy(Criteria.ACCURACY_FINE);
-		
-		bestProvider = lManager.getProvider(lManager.GPS_PROVIDER).toString();
-		
-		if (bestProvider == null) {
-			Log.i("Localisation message", "Aucun gestionnaire gps trouvé, veuillez activer la localisation");
-			Intent intentMain = new Intent(this, MainActivity.class);
-			startActivity(intentMain);
-		} else {
-//			bestProvider = lManager.getBestProvider(criteria, false);
-			lManager.requestLocationUpdates(bestProvider, 60000, 0, this);
-			Intent intentResult = new Intent(this,ResultActivity.class);
-    		startActivity(intentResult);
-		}
+		Criteria criteria = new Criteria();
+		criteria.setAccuracy(Criteria.ACCURACY_FINE);
+		String bestProvider = lManager.getBestProvider(criteria, true);
 		return bestProvider;
+		
 	}
 
 	public void onLocationChanged(Location location) {
