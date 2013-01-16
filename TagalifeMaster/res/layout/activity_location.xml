@@ -1,154 +1,98 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background_hdpi"
-    tools:context=".TagActivity" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_hdpi" 
+    android:orientation="vertical">
 
+    <TextView
+        android1:id="@+id/textViewsexe"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android1:text="Sexe"/>
+    
     <RadioGroup
-        android:id="@+id/radioGroupSexe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textViewHomme"
-        android:layout_marginLeft="19dp"
-        android:layout_toRightOf="@+id/textViewHomme"
-        android:orientation="horizontal" >
+        android1:id="@+id/radioGroupSexe"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android1:orientation="horizontal" >
+
+        <RadioButton
+            android1:id="@+id/radioHomme"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="Homme" />
+
+        <RadioButton
+            android1:id="@+id/radioFemme"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Femme" />
     </RadioGroup>
 
-    <RadioButton
-        android:id="@+id/radioHomme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textViewHomme"
-        android:layout_alignBottom="@+id/textViewHomme"
-        android:layout_toRightOf="@+id/textViewHomme"
-        android:checked="true" />
-
     <TextView
-        android:id="@+id/textViewHomme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="123dp"
-        android:text="Homme"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textViewAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/radioHomme"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:text="Age"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <RadioButton
-        android:id="@+id/radioFemme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/radioHomme"
-        android:layout_alignBottom="@+id/radioHomme"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@+id/textViewAge" />
-
-    <TextView
-        android:id="@+id/textViewFemme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/radioFemme"
-        android:layout_alignBottom="@+id/radioFemme"
-        android:layout_toRightOf="@+id/radioFemme"
-        android:text="Femme"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
+        android1:id="@+id/textViewAge"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android1:text="Age"/>
+    
     <SeekBar
-        android:id="@+id/seekBarAge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textViewAge"
-        android:layout_marginTop="37dp" />
-
-    <TextView
-        android:id="@+id/textViewEtat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBarAge"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Etat"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
+        android1:id="@+id/seekBarAge"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+	    
+     <TextView
+        android1:id="@+id/textViewEtat"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android1:text="Etat"/>
+     
     <RadioGroup
-        android:id="@+id/radioGroupEtat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewEtat"
-        android:layout_toRightOf="@+id/radioHomme"
-        android:orientation="horizontal" >
+        android1:id="@+id/radioGroupEtat"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android1:orientation="horizontal" >
 
+        <RadioButton
+            android1:id="@+id/radioEtatBon"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="Bon" />
+
+        <RadioButton
+            android1:id="@+id/radioEtatMauvais"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Mauvais" />
+        
+        <RadioButton
+            android1:id="@+id/radioEtatTresMauvais"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Très mauvais" />
     </RadioGroup>
-
-    <RadioButton
-        android:id="@+id/radioEtatTresMauvais"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/radioEtatMauvais"
-        android:layout_alignBottom="@+id/radioEtatMauvais"
-        android:layout_alignRight="@+id/textViewEtat" />
-
-    <RadioButton
-        android:id="@+id/radioEtatBon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewEtat"
-        android:layout_toLeftOf="@+id/radioHomme"
-        android:checked="true" />
-
-    <TextView
-        android:id="@+id/textViewEtatBon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/radioEtatBon"
-        android:layout_alignBottom="@+id/radioEtatBon"
-        android:layout_alignLeft="@+id/textViewHomme"
-        android:text="Bon" />
-
-    <TextView
-        android:id="@+id/textViewMauvais"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/radioEtatTresMauvais"
-        android:layout_alignBottom="@+id/radioEtatTresMauvais"
-        android:layout_alignLeft="@+id/radioHomme"
-        android:text="Mauvais" />
-
-    <TextView
-        android:id="@+id/textViewTresMauvais"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/radioEtatTresMauvais"
-        android:layout_alignBottom="@+id/radioEtatTresMauvais"
-        android:layout_toLeftOf="@+id/radioEtatMauvais"
-        android:text="Tres Mauuvais" />
-
-    <RadioButton
-        android:id="@+id/radioEtatMauvais"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/radioGroupEtat" />
-
+	    
     <ImageButton
         android:id="@+id/imageButtonValider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioGroupEtat"
-        android:layout_alignParentBottom="true"
         android:background="@color/bgcolor"
-        android:src="@drawable/localisation_icon_ok" />
+        android:src="@drawable/localisation_icon_ok"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+    
 
-</RelativeLayout>
+</LinearLayout>
