@@ -22,19 +22,32 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class LocationActivity extends Activity implements OnClickListener, LocationListener {
+public class LocationActivity extends Activity implements OnClickListener, LocationListener, OnSeekBarChangeListener {
 
 	private LocationManager lManager;
 	private Location location;
 	String bestProvider = null;
 	ImageButton validate;
+	private SeekBar bar; 
+    private TextView textProgress;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_location);
+		
+		 bar = (SeekBar)findViewById(R.id.seekBarAge); // make seekbar object
+	        bar.setOnSeekBarChangeListener(this); // set seekbar listener.
+	        // since we are using this class as the listener the class is "this"
+	        
+	        // make text label for progress value
+	        textProgress = (TextView)findViewById(R.id.textViewAge);
+
 		
 		findViewById(R.id.imageButtonValider).setOnClickListener(this);
 		
@@ -42,6 +55,13 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 		getProvider();
 		
 	}
+	
+
+	public void onProgressChanged (SeekBar seekBar, int progress, boolean fromUser) {
+	    	
+	    	// change progress text label with current seekbar value
+	    	textProgress.setText("Age : "+progress);
+	    }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -122,5 +142,21 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 		Log.i("Tag mode", "Le statut de la source a changé");
 		
 	}
+
+
+	public void onStartTrackingTouch(SeekBar seekBar) {
+		
+		
+	}
+
+
+	public void onStopTrackingTouch(SeekBar seekBar) {
+		seekBar.setSecondaryProgress(seekBar.getProgress());
+		
+	}
+
+
+	
+	
 
 }

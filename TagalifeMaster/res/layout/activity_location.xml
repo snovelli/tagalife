@@ -41,13 +41,14 @@
         android1:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android1:text="Age"/>
+        android1:text="Age : "/>
     
     <SeekBar
         android1:id="@+id/seekBarAge"
         android1:layout_width="match_parent"
         android1:layout_height="wrap_content"
-        android:layout_marginTop="10dp" />
+	    android:max="99"
+	    android:layout_margin="5dip"/>
 	    
      <TextView
         android1:id="@+id/textViewEtat"
