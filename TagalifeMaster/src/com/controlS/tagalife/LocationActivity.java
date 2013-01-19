@@ -82,7 +82,16 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 	
 	private void createXMLDocument() {
 		
-		File tagXML = new File(Environment.getExternalStorageDirectory() + "/tagXML.xml");
+		File tagXML;
+		
+		System.out.println(Environment.getRootDirectory().getPath() + "/sdcardo/tagXML.xml");
+		
+		if (!Environment.getExternalStorageDirectory().exists()) {
+			tagXML = new File(Environment.getRootDirectory().getPath() + "/sdcardo/tagXML.xml");
+		} else {
+			tagXML = new File(Environment.getExternalStorageDirectory() + "/tagXML.xml");
+		}
+		
 		try {
 			tagXML.createNewFile();
 		} catch (IOException ioe) {
@@ -159,6 +168,7 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 		}
 	}
 	
+	//TODO refactor this to find a way to make it functionnal
 	protected String getProvider() {
 		setProgressBarIndeterminateVisibility(true);
 		
@@ -178,6 +188,7 @@ public class LocationActivity extends Activity implements OnClickListener, Locat
 			createXMLDocument();
     		startActivity(intentResult);
 		}
+		System.out.println(bestProvider);
 		return bestProvider;
 	}
 
